@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PHP Migration Analyzer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><ellipse cx='16' cy='16' rx='15' ry='9' fill='%23777bb3'/><text x='16' y='20' font-size='10' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>php</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="logo">php</span>
+      <span>Migration Analyzer</span>
+      <span class="brand-sub">5.x → 8.x</span>
+    </a>
+    <nav class="topnav">
+      <a href="#/" data-nav="home">Projects</a>
+      <a href="#/new" data-nav="new">New scan</a>
+      <a href="#/rules" data-nav="rules">Rules</a>
+      <a href="#/guide" data-nav="guide">Migration guide</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="th">TH</button>
+    </div>
+  </header>
+
+  <main id="app"><div class="loading">Loading…</div></main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-head"><h3 id="modal-title"></h3><button class="icon-btn" id="modal-close" aria-label="Close">✕</button></div>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
