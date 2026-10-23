@@ -1,5 +1,7 @@
 # PHP Migration Analyzer (PHP 5.x → 8.x)
 
+![PHP Migration Analyzer dashboard](screenshot.png)
+
 A SonarQube-style static analyzer built with Node.js + Express and a web dashboard. It scans every file in a PHP project and reports:
 
 - **Removed features**: `mysql_*`, `ereg`, `mcrypt`, `each()`, `create_function()`, PHP 4 constructors, `$HTTP_*_VARS`, `preg_replace /e`, ASP tags…
